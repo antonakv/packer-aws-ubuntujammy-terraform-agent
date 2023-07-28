@@ -24,6 +24,8 @@ DEBIAN_FRONTEND=noninteractive apt-get -y upgrade ${APTARGS}
 
 #DEBIAN_FRONTEND=noninteractive apt-get -y install net-tools docker-ce=5:20.10.7~3-0~ubuntu-focal docker-ce-cli=5:20.10.7~3-0~ubuntu-focal containerd.io awscli jq neovim unzip ${APTARGS}
 
+DEBIAN_FRONTEND=noninteractive apt-get -y install net-tools jq neovim unzip ${APTARGS}
+
 curl -s https://packagecloud.io/install/repositories/netdata/netdata/script.deb.sh | DEBIAN_FRONTEND=noninteractive bash
 
 DEBIAN_FRONTEND=noninteractive apt-get --assume-yes update ${APTARGS}
